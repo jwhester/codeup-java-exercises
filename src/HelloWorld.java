@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Goodbye, JavaScript!");
@@ -32,6 +34,8 @@ public class HelloWorld {
 //        int y = 2;
 //        x/=y;
 //        y-=x;
+        Scanner scanner = new Scanner(System.in);
+
 
     }
 }
