@@ -29,7 +29,7 @@ public class DontPanic {
         game = new DontPanic();
 
         game.playerSetUp();
-        game.townGate();
+        game.start();
     }
 
     public void playerSetUp(){
@@ -63,7 +63,7 @@ public class DontPanic {
 
 
     }
-    public void townGate(){
+    public void start(){
 
         System.out.println("\n------------------------------------------------------------------\n");
         sleepy(2000);
@@ -91,13 +91,42 @@ public class DontPanic {
         sleepy(4000);
         System.out.println("I'm sure you'll do just fine.");
         sleepy(3000);
+        System.out.println("                        ;;\\\\/;;;;;;;;\n" +
+                "                   ;;;;;;;;;;;;;;;;;\n" +
+                "                ;;;;;;;;;;;;     ;;;;;\n" +
+                "               ;;;;;    ;;;         \\;;\n" +
+                "              ;;;;;      ;;          |;\n" +
+                "             ;;;;         ;          |\n" +
+                "             ;;;                     |\n" +
+                "              ;;                     )\n" +
+                "               \\    ~~~~ ~~~~~~~    /\n" +
+                "                \\    ~~~~~~~  ~~   /\n" +
+                "              |\\ \\                / /|\n" +
+                "               \\\\| %%%%%    %%%%% |//\n" +
+                "              [[====================]]\n" +
+                "               | |  ^          ^  |\n" +
+                "               | | :@: |/  \\| :@: | |\n" +
+                "                \\______/\\  /\\______/\n" +
+                "                 |     (@\\/@)     |\n" +
+                "                /                  \\\n" +
+                "               /  ;-----\\  ______;  \\\n" +
+                "               \\         \\/         /\n" +
+                "                )                  (\n" +
+                "               /                    \\\n" +
+                "               \\__                  /\n" +
+                "                \\_                _/\n" +
+                "                 \\______/\\/\\______/\n" +
+                "                  _|    /--\\    |_\n" +
+                "                 /%%\\  /\"'\"'\\  /%%\\\n" +
+                "  ______________/%%%%\\/\\'\"'\"/\\/%%%%\\______________\n" +
+                " / :  :  :  /  .\\%%%%%%%\\\"'/%%%%%%%/.  \\  :  :  : \\\n" +
+                ")  :  :  :  \\.  .\\%%%%%%/'\"\\%%%%%%/.  ./  :  :  :  (");
         System.out.printf("Hurling Frootmig: So %s, you want to be our newest field editor?",playerName );
         sleepy(3000);
         System.out.println("-------What do you want to say?-------");
         sleepy(3000);
         System.out.println("1: Yes");
-        System.out.println("2: Attack the guard");
-        System.out.println("3: Leave");
+        System.out.println("2: No");
         System.out.println("\n------------------------------------------------------------------\n");
 
         choice = myScanner.nextInt();
@@ -109,32 +138,25 @@ public class DontPanic {
             else{
                 System.out.println("Hurling Frottmig: Great! That's what I like to hear, " + playerName + "! \nI need you to go out and explore the unknown. When you find some new and interesting information just add it to the guide.  When you get at least 10 entries to the guide come back and see me for your pay.");
                 enterScanner.nextLine();
-                townGate();
+                starport();
             }
 
         }
         else if(choice==2){
-            playerHP = playerHP-1;
-            System.out.println("Guard: Hey don't be stupid.\n\nThe guard hit you so hard and you gave up.\n(You receive 1 damage)\n");
-            System.out.println("Your HP: " + playerHP);
-            enterScanner.nextLine();
-            townGate();
-        }
-        else if(choice==3){
-            crossRoad();
-        }
-        else{
-            townGate();
+            System.out.println("Hurling Frottmig: Well thanks for wasting my time!\n");
+            sleepy(3000);
+            dead();
+
         }
     }
 
-    public void crossRoad(){
+    public void starport(){
         System.out.println("\n------------------------------------------------------------------\n");
-        System.out.println("You are at a crossroad. If you go south, you will go back to the town.\n\n");
+        System.out.println("You are at the Starport. Where would you like to go\n\n");
         System.out.println("1: Go north");
         System.out.println("2: Go east");
         System.out.println("3: Go south");
-        System.out.println("4: Go west");
+        System.out.println("4: Megadodo Publications");
         System.out.println("\n------------------------------------------------------------------\n");
 
         choice = myScanner.nextInt();
@@ -152,7 +174,7 @@ public class DontPanic {
             west();
         }
         else{
-            crossRoad();
+            starport();
         }
     }
 
