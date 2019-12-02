@@ -1,7 +1,9 @@
+package DontPanic;
+
 import java.util.Scanner;
 import java.util.Random;
 
-public class turtleBear {
+public class TurtleBear {
     static String userName;
     static int userHealth;
     static int userGuard;
@@ -39,7 +41,7 @@ public class turtleBear {
     // GENERATOR ARRAYS //
     //******************//
 
-    static String[] firstEvilName = new String[]{"Tilfor","Onslow","Patton","Northcliffe","James", "Rider", "Goldgaze", "Silverpelt", "JW", "Jacob"};
+    static String[] firstEvilName = new String[]{"Tilfor","Onslow","Patton","Northcliffe","James", "Rider", "Goldgaze", "Silverpelt", "J.W.", "Jacob"};
     static String[] lastEvilName = new String[]{"Steamwraith", "Embersnare", "Dreamscream", "Vapor", "Franco", "Duskbluff", "Goreflare", "Dawntoe", "Barrow", "Hester"};
     static String newEnemyName = firstEvilName[rando_int] + " " + lastEvilName[rando_intTwo];
     static String[] enemyChoices = new String[]{"ATTACK", "DEFENSE"};
