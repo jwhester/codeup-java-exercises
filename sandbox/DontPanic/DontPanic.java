@@ -37,6 +37,7 @@ public class DontPanic {
 
         playerHP = 10;
         monsterHP = 15;
+        theBook = 0;
 
         playerWeapon = "Towel";
 
@@ -132,10 +133,6 @@ public class DontPanic {
         choice = myScanner.nextInt();
 
         if(choice==1){
-            if(theBook==10){
-                ending();
-            }
-            else{
                 System.out.println("Hurling Frottmig: Great! That's what I like to hear, " + playerName + "! \nI need you to go out and explore the unknown. When you find some new and interesting information just add it to the guide.  When you get at least 10 entries to the guide come back and see me for your pay.");
                 enterScanner.nextLine();
                 starport();
