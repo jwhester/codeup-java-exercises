@@ -2,7 +2,7 @@ package util;
 
 import java.util.Scanner;
 
-public class Input {
+public class Input extends Exception {
     private Scanner sc = new Scanner(System.in);
 //    String input = sc.next();
 
@@ -22,21 +22,37 @@ public class Input {
 
 
     public int getInt(int min, int max) {
-        int num;
-        do {
-            System.out.println("Enter a number.");
-            num = sc.nextInt();
-        } while (num < min || num > max);
-        return num;
+        System.out.println("Enter a number.");
+        int num = Integer.valueOf(getString());
+                try {
+                    if (num < min || num > max)
+                        return getInt(min, max);
+                } catch (Exception e){
+                    System.out.println("Enter a number");
+                    getInt(min, max);
+                }
+        System.out.println("You're number is " + num);
+                return num;
+    }
+
+    public int getInt(){
+        System.out.println("Enter a number.");
+        return Integer.parseInt(getString());
+
     }
 
     public double getDouble(double min, double max) {
-        Double dub;
-        do {
-            System.out.println("Enter a number.");
-            dub = sc.nextDouble();
-        } while (dub < min || dub > max);
-        return dub;
+        System.out.println("Enter a number.");
+        double num = Double.valueOf(getString());
+        try {
+            if (num < min || num > max)
+                return getDouble(min, max);
+        } catch (Exception e){
+            System.out.println("Enter a number");
+            getDouble(min, max);
+        }
+        System.out.println("You're number is " + num);
+        return num;
     }
 
     public double getDouble() {
