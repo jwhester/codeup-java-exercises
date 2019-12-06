@@ -63,5 +63,6 @@ public class Input extends Exception {
         Input input = new Input();
         input.yesNo();
         input.getInt(1, 10);
+        input.getDouble(1,10);
     }
 }
