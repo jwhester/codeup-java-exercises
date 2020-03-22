@@ -4,6 +4,9 @@ public class Practice {
     public static void convert(int minutes) {
         System.out.println(minutes * 60);
     }
+    public static void ConvertHoursToSeconds(int hours){
+        System.out.println((hours * 60) * 60);
+    }
 
     public static void isEqual(int num1, int num2) {
         if (num1 == num2) {
@@ -24,6 +27,7 @@ public class Practice {
         SumOfTwoNumbers(1,2);
         convert(100);
         isEqual(1, 1);
+        ConvertHoursToSeconds(1);
 
     }
 }
