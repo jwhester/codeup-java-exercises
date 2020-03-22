@@ -8,6 +8,14 @@ public class Practice {
         System.out.println((hours * 60) * 60);
     }
 
+    public static boolean lessThan100(int a, int b) {
+        if (a + b <= 100){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public static void isEqual(int num1, int num2) {
         if (num1 == num2) {
             System.out.println(true);
