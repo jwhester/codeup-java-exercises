@@ -29,7 +29,12 @@ public class Practice {
 
 
     }
-
+    public static void animals(int chickens, int cows, int pigs) {
+        int chicken = chickens * 2;
+        int cow = cows * 4;
+        int pig = pigs * 4;
+        System.out.println(chicken + cow + pig);
+    }
 
     public static void main(String[] args) {
         SumOfTwoNumbers(1,2);
