@@ -40,7 +40,16 @@ public class Practice {
         System.out.println((base * height)/2);
     }
 
+    public static int Fibonacci(int a)
+    {
+        if (a == 0){
+            return 1;
+        }
+        if (a <= 2)
+            return a;
+        return Fibonacci(a-1) + Fibonacci(a-2);
 
+    }
 
 
     public static void sayHelloBye(String name, int num) {
@@ -56,6 +65,7 @@ public class Practice {
         convert(100);
         isEqual(1, 1);
         ConvertHoursToSeconds(1);
+        System.out.println(Fibonacci(25));
 
     }
 }
