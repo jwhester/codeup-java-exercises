@@ -36,6 +36,21 @@ public class Practice {
         System.out.println(chicken + cow + pig);
     }
 
+    public static void triArea(int base, int height) {
+        System.out.println((base * height)/2);
+    }
+
+
+
+
+    public static void sayHelloBye(String name, int num) {
+        name = name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase();
+        if (num == 1){
+            System.out.println("Hello " + name);
+        } else{
+            System.out.println("Bye " + name);
+        }
+    }
     public static void main(String[] args) {
         SumOfTwoNumbers(1,2);
         convert(100);
