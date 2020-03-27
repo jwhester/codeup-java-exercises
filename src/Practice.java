@@ -40,6 +40,14 @@ public class Practice {
         System.out.println((base * height)/2);
     }
 
+    public static void hello(String name ){
+        if(name.contains("a") | name.contains("A")){
+            System.out.println("Your name has an A");
+        } else{
+            System.out.println("Your name does not have an A in it.");
+        }
+    }
+
     public static int Fibonacci(int a)
     {
         if (a == 0){
@@ -66,6 +74,7 @@ public class Practice {
         isEqual(1, 1);
         ConvertHoursToSeconds(1);
         System.out.println(Fibonacci(25));
+        hello("Albuquerque");
 
     }
 }
