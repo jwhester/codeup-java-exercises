@@ -25,7 +25,12 @@ public class Practice {
     }
 
     public static void SumOfTwoNumbers(int a, int b) {
-        System.out.println(a + b);
+        if (a + b <= 100){
+            System.out.println((a + b) + " is less than 100!");
+        } else {
+            System.out.println((a + b) + " is more than 100!");
+        }
+
 
 
     }
