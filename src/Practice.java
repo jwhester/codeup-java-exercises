@@ -73,6 +73,24 @@ public class Practice {
             System.out.println("Bye " + name);
         }
     }
+
+    public static void check(int a, int b, int c){
+        if (a > b && a > c){
+            System.out.println(a + " wins!");
+        }
+        if (a > b && a < c){
+            System.out.println(a + " beats " + b);
+        }
+        if (a < b && a < c){
+            System.out.println(a + " loses.");
+        }
+
+        if (a < b && a > c){
+            System.out.println(a + " beats " + c);
+        } else {
+            System.out.println(a +" "+ b+" " + c);
+        }
+    }
     public static void main(String[] args) {
         SumOfTwoNumbers(1,2);
         convert(100);
