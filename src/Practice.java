@@ -34,10 +34,11 @@ public class Practice {
 
 
     }
-    public static void animals(int chickens, int cows, int pigs) {
+    public static void animals(int chickens, int cows, int pigs, int snakes) {
         int chicken = chickens * 2;
         int cow = cows * 4;
         int pig = pigs * 4;
+        int snake = snakes * 0;
         System.out.println(chicken + cow + pig);
     }
 
